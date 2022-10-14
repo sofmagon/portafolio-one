@@ -1,0 +1,387 @@
+/* === CUSTOM PROPERTIES === */
+:root {
+    --blanco: #FFF;
+    --negro: #000;
+    --grisOscuro: #464646;
+    --grisClaro: #F5F5F5;
+    --azulClaro: #EAF2FD;
+    --btnAzul: #2A7AE4;
+    --berkshire: 'Berkshire Swash', cursive;
+    --jetBrains: 'JetBrains Mono', monospace;
+}
+
+/* === GLOBALES === */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--grisClaro) ;
+    color: var(--grisOscuro);
+    font-family: var(--jetBrains);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    max-width: 144rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* === MENÚ === */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.2rem 0;
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu__title {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.menu__icon {
+    font-size: 3rem;
+}
+
+.menu__nav {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.menu__nav__enlace {
+    color: var(--grisOscuro);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.menu__nav__enlace--bold {
+    font-weight: 700;
+}
+
+/* === HERO === */
+.hero__container {
+    display: flex;
+    align-items: center;
+    margin: 3.2rem 0;
+    gap: 3rem;
+}
+
+.hero__profile {
+    order: 1;
+    border-radius: 50%;
+}
+
+.hero__bio {
+    margin: 0;
+    font-size: 5.2rem;
+    font-family: var(--berkshire);
+}
+
+.hero__texto {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.hero__network {
+    display: flex;
+    gap: 3rem;
+}
+
+.hero__network__enlace {
+    color: var(--grisOscuro);
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+/* === ABOUT === */
+.about {
+    background-color: var(--azulClaro);
+}
+
+.about__container {
+    padding: 6.4rem 0;
+}
+
+.about__title {
+    font-family: var(--berkshire);
+    font-size: 3.2rem;
+    margin: 0;
+}
+
+.about__paragraph {
+    margin: 1.6rem 0 0 0;
+    font-size: 2rem;
+    text-align: justify;
+    width: 70%;
+}
+
+/* === SKILLS === */
+.skills {
+    margin-bottom: 8rem;
+}
+
+.skills__title {
+    font-family: var(--berkshire);
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 3.2rem 0;
+}
+
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.6rem;
+}
+
+.skills__box {
+    background-color: var(--blanco);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.skills__box__img {
+    width: 80px;
+}
+
+.skills__box__name {
+    margin: 0;
+}
+
+/* === HOBBIES === */
+.hobbies {
+    margin-bottom: 8rem;
+}
+
+.hobbies__title {
+    font-family: var(--berkshire);
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 3.2rem 0;
+}
+
+.hobbies__container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.6rem;
+}
+
+.hobbies__box {
+    background-color: var(--blanco);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.hobbies__box__img {
+    width: 80px;
+    margin-bottom: 1.2rem;
+}
+
+.hobbies__box__name {
+    margin: 0;
+}
+
+/* === FORMACIÓN ACADÉMICA === */
+.academic {
+    background-color: var(--azulClaro);
+}
+
+.academic__courses {
+    padding: 8.2rem 0;
+}
+
+.academic__title {
+    font-family: var(--berkshire);
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 3.2;
+}
+
+.academic__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+.academic__box {
+    background-color: var(--blanco);
+    border-radius: 1rem;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.academic__box__title {
+    margin: 0.8rem 0;
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+.academic__box__subtitle {
+    margin: 0;
+}
+
+/* === PROYECTOS === */
+.experience__title {
+    font-family: var(--berkshire);
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 3.2rem 0;
+}
+
+.experience__box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.6rem;
+    margin-bottom: 6.4rem;
+}
+
+.experience__box--cambio {
+    grid-template-columns: 1fr 2fr;
+}
+
+.experience__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.experience__info--cambio {
+    order: -1;
+}
+
+.experience__img {
+    width: 100%;
+}
+
+.experience__heading {
+    margin: 0;
+}
+
+.experience__text {
+    margin: 0.8rem 0;
+    text-align: justify;
+}
+
+.buttons {
+    margin-top: 0.8rem;
+}
+
+.btn {
+    width: 100%;
+    display: inline-block;
+    color: var(--btnAzul);
+    border: 3px solid var(--btnAzul);
+    padding: 1.5rem 1rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn--filled {
+    background-color: var(--btnAzul);
+    color: var(--blanco);
+}
+
+/* === CONTACTO === */
+.form-contacto {
+    background-color: var(--azulClaro);
+    padding: 6.4rem;
+}
+
+.form-contacto__contenedor {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.form-contacto__title {
+    margin: 0;
+}
+
+.form-contacto__img {
+    width: 100%;
+}
+
+.form-contacto__text {
+    margin: 0 0 3.2rem 0;
+}
+
+.form-contacto__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contacto__input,
+.form-contacto__textarea {
+    background-color: var(--blanco);
+    border-radius: 0.4rem;
+    margin-bottom: 3.2rem;
+    height: 5.6rem;
+    border: none;
+    color: var(--grisOscuro);
+}
+
+.form-contacto__textarea {
+    height: 13.3rem;
+    resize: none;
+}
+
+.btn--contacto {
+    width: 30%;
+}
+
+/* === FOOTER === */
+.footer {
+    background-color: var(--blanco);
+    padding: 3rem;
+}
+
+.footer__texto {
+    margin: 0;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.footer__pizza {
+    font-size: 2.3rem;
+}
+
+.footer__enlace {
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--negro);
+}
