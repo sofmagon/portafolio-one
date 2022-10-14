@@ -46,7 +46,13 @@ img {
     padding: 3.2rem 0;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 375px) {
+    .menu {
+        padding: 1.6rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
     .menu {
         padding: 1.6rem 0;
     }
@@ -78,7 +84,7 @@ img {
     text-decoration: none;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 375px) and (max-width: 1024px) {
     .menu__nav__enlace {
         display: none;
     }
@@ -88,7 +94,13 @@ img {
     font-weight: 700;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 375px) and (max-width: 767px) {
+    .menu__nav__enlace--bold {
+        font-weight: normal;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 1024px) {
     .menu__nav__enlace--bold {
         display: inline-block;
     }
@@ -102,10 +114,20 @@ img {
     gap: 2.08rem;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 375px) {
     .hero__container {
         margin: 0;
+        padding: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero__container {
         padding: 3.2rem 0;
+        flex-direction: row;
         gap: 3.2;
     }
 }
@@ -115,7 +137,14 @@ img {
     border-radius: 50%;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 375px) and (max-width: 767px) {
+    .hero__profile {
+        order: 0;
+        width: 98px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
     .hero__profile {
         width: 146px;
     }
@@ -127,7 +156,14 @@ img {
     font-family: var(--berkshire);
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 375px) and (max-width: 767px) {
+    .hero__bio {
+        /* font-family: var(--jetBrains); */
+        font-size: 4.4rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
     .hero__bio {
         font-size: 3rem;
     }
@@ -138,7 +174,7 @@ img {
     text-align: justify;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .hero__texto {
         font-size: 1.8rem;
     }
@@ -155,7 +191,7 @@ img {
     text-decoration: none;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .hero__network__enlace {
         font-size: 2.2rem;
     }
@@ -170,7 +206,7 @@ img {
     padding: 6.4rem 0;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .about__container {
         padding: 3.2rem 0;
     }
@@ -189,7 +225,7 @@ img {
     width: 70%;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .about__paragraph {
         font-size: 1.8rem;
         width: 100%;
@@ -214,7 +250,7 @@ img {
     margin: 3.2rem 0;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .skills__title {
         margin: 3.2rem 0 0 0;
     }
@@ -226,7 +262,7 @@ img {
     gap: 1.6rem;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .skills__container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -242,7 +278,7 @@ img {
     padding: 1rem 0;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .skills__box {
         margin-top: 3.2rem;
     }
@@ -261,7 +297,7 @@ img {
     margin-bottom: 8rem;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .hobbies {
         margin-bottom: 3.7rem;
     }
@@ -274,7 +310,7 @@ img {
     margin: 3.2rem 0;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .hobbies__title {
         margin: 3.2rem 0 0 0;
     }
@@ -286,7 +322,7 @@ img {
     gap: 1.6rem;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .hobbies__container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -302,7 +338,7 @@ img {
     padding: 1rem 0;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .hobbies__box {
         margin-top: 3.2rem;
     }
@@ -326,7 +362,7 @@ img {
     padding: 8.2rem 0;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .academic__courses {
         padding: 3.2rem 0;
     }
@@ -355,7 +391,7 @@ img {
     justify-content: center;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .academic__box {
         height: 150px;
         padding: 2rem;
@@ -368,7 +404,7 @@ img {
     font-size: 2rem;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .academic__box__title {
         font-size: 1.8rem;
     }
@@ -394,7 +430,7 @@ img {
     margin-bottom: 6.4rem;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .experience__box {
         display: flex;
         flex-direction: column;
@@ -421,7 +457,7 @@ img {
     order: -1;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .experience__info--cambio {
         order: 0;
     }
@@ -432,7 +468,7 @@ img {
     font-size: 2.2rem;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .experience__heading {
         font-size: 2rem;
     }
@@ -459,7 +495,7 @@ img {
     font-size: 2rem;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .btn {
         display: inline;
         font-size: 1.6rem;
@@ -482,7 +518,7 @@ img {
     padding: 6.4rem;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .contacto {
         padding: 3.2rem;
     }
@@ -494,7 +530,7 @@ img {
     gap: 1.6rem;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .contacto__container {
         display: flex;
         justify-content: center;
