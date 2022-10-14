@@ -2,15 +2,15 @@
 
 ### Realizado con HTML, CSS y JavaScript
 
-## 🚀 [Ir a la aplicación](https://sofmagon.github.io/)
+## 🚀 [Ir a la aplicación](https://sofmagon.github.io/portafolio-one/)
 
 > Preview: Responsive Web Design
 
-![mockup](https://i.ibb.co/GkyFrmx/encriptador-devices.jpg)
+![mockup]()
 
 ## Contenido
 
-- [Descripción del proyecto](#project-description)
+- [Descripción del proyecto](#descripcion-del-proyecto)
 
 - [Tecnologías empleadas](#technologies-used)
 
