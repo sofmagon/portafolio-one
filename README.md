@@ -8,22 +8,19 @@
 
 ![mockup]()
 
-## Contenido
-
-- [Descripción del proyecto](#descripcion-del-proyecto)
-
-- [Tecnologías empleadas](#technologies-used)
-
-- [Construido con](#built-with)
-
-- [Autor](#author)
-
 ## Descripción del proyecto
 <p align="justify">
-	A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.
-	Your challenge is to build out this QR code component and get it looking as close to the design as possible. <br>
-	You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+¡Bienvenido al primer desafío del Challenge Fron End! En esta sprint, vamos a trabajar en la construcción de un Portafolio, para que puedas mostrar tus proyectos a posibles reclutadores.
 </p>
+
+#### Requisitos
+1. Menú de navegación, una foto de perfil, una sección sobre mí, incluir enlaces a redes sociales.
+2. Debe tener tus datos personales: nombre, edad, nacionalidad, biografía.
+3. Sección de Skills y Hobbies.
+4. Sección de formación y cursos.
+5. Sección de experiencia en la programación, proyectos realizados.
+6. Agregar un formulario de contacto con los siguientes campos: correo electrónico, nombre, asunto, mensaje y un botón para enviar la información.
+7. Colocar un pie de página con la información de la persona que desarrolló este challenge.
 
 ## Tecnologías empleadas
 <div>
@@ -40,7 +37,7 @@
 - Responsive Web Design
 
 ## Autor
-- All my links: [SOFMAGON](https://beacons.ai/sofmagon)
+- Todos mis enlaces: [SOFMAGON](https://beacons.ai/sofmagon)
 
 ### **Este es un reto creado durante mi estadía en el programa [ONE](https://www.oracle.com/mx/education/oracle-next-education/) auspiciado por Oracle Latinoamérica y la plataforma [Alura](https://www.aluracursos.com)**
 
