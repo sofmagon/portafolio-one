@@ -6,7 +6,7 @@
 
 > Preview: Responsive Web Design
 
-![mockup]()
+![mockup](https://i.ibb.co/17cxxHf/Portafolio-RWD.jpg)
 
 ## Descripción del proyecto
 <p align="justify">
