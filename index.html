@@ -24,6 +24,8 @@
     <!-- Estilos locales de CSS -->
     <link rel="preload" href="./assets/css/main.css" as="style">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preload" href="./assets/css/spinner.css" as="style">
+    <link rel="stylesheet" href="./assets/css/spinner.css">
 </head>
 <body>
     <!-- Menú  -->
@@ -214,13 +216,39 @@
             <div class="contacto__div">
                 <h2 class="contacto__title">Contacto</h2>
                 <p class="contacto__text">Completa el siguiente formulario y me comunicaré lo antes posible.</p>
-                <form class="contacto__form" name="form">
-                    <input class="contacto__form__input" type="text" name="nombre" placeholder="Nombre">
-                    <input class="contacto__form__input" type="email" name="email" placeholder="E-mail">
-                    <input class="contacto__form__input" type="text" name="asunto" placeholder="Asunto">
-                    <textarea class="contacto__form__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                    <button type="submit" class="btn btn--filled btn--contacto">Enviar mensaje</button>
+                <form id="formulario" class="contacto__form" name="form">
+                    <div class="box-input">
+                        <label for="nombre" class="box-input__label">Tu nombre</label>
+                        <input id="nombre" class="box-input__input" type="text" for="nombre" name="nombre" placeholder="¿Cómo quieres que te llame?" maxlength="50">
+                    </div>
+
+                    <div class="box-input">
+                        <label for="email" class="box-input__label">Tu correo</label>
+                        <input id="email" class="box-input__input" type="email" name="email" placeholder="usuario@dominio.com">
+                    </div>
+
+                    <div class="box-input">
+                        <label for="asunto" class="box-input__label">Asunto</label>
+                        <input id="asunto" class="box-input__input" type="text" name="asunto" placeholder="Dime en qué te puedo ayudar" maxlength="50">
+                    </div>
+
+                    <div class="box-input">
+                        <label for="mensaje" class="box-input__label">Tu mensaje</label>
+                        <textarea id="mensaje" class="box-input__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Ahora sí, cuéntamelo todo" maxlength="300"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--filled btn--contacto btn--opacity" disabled>Enviar mensaje</button>
                 </form>
+                <div id="spinner" class="hidden">
+                    <div class="sk-chase">
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
