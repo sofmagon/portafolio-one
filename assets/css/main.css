@@ -291,6 +291,9 @@ img {
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
+    /* Aplicando la animación */
+    transition-property: transform;
+    transition-duration: 300ms;
 }
 
 @media (max-width: 1080px) {
@@ -303,6 +306,12 @@ img {
     .skills__box:last-of-type {
         grid-column: 1 / 3;
     }
+}
+
+.skills__box:hover {
+    /* Efecto: crecimiento del 10% */
+    transform: scale(1.1);
+    border: 5px solid var(--azulClaro);
 }
 
 .skills__box__img {
@@ -376,12 +385,21 @@ img {
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
+    /* Aplicando la animación */
+    transition-property: transform;
+    transition-duration: 300ms;
 }
 
 @media (max-width: 1080px) {
     .hobbies__box {
         margin-top: 3.2rem;
     }
+}
+
+.hobbies__box:hover {
+    /* Efecto: crecimiento del 10% */
+    transform: scale(1.1);
+    border: 5px solid var(--azulClaro);
 }
 
 .hobbies__box__img {
@@ -641,20 +659,28 @@ img {
     flex-direction: column;
 }
 
-.contacto__form__input,
-.contacto__form__textarea {
+.box-input {
+    margin-bottom: 1rem;
+}
+
+.box-input__label {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.box-input__input,
+.box-input__textarea {
     display: inline-block;
     width: 100%;
     background-color: var(--blanco);
     border-radius: 0.4rem;
-    margin-bottom: 3.2rem;
     height: 5.6rem;
     border: none;
     color: var(--grisOscuro);
 }
 
-.contacto__form__textarea {
-    height: 13.3rem;
+.box-input__textarea {
+    height: 20rem;
     resize: none;
 }
 
@@ -667,6 +693,43 @@ img {
     .btn--contacto {
         width: 50%;
     }
+}
+
+.box-input__exito {
+    background-color: green;
+    padding: 2rem 3rem;
+    color: white;
+    text-align: center;
+    margin: 2rem 0 0 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.box-input__error {
+    background-color: navy;
+    padding: 2rem 3rem;
+    color: white;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.btn--opacity {
+    opacity: 0.5;
+}
+
+/* === SPINNER === */
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#spinner {
+    margin-top: 1rem;
 }
 
 /* === FOOTER === */
