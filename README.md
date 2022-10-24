@@ -13,14 +13,21 @@
 ¡Bienvenido al primer desafío del Challenge Fron End! En esta sprint, vamos a trabajar en la construcción de un Portafolio, para que puedas mostrar tus proyectos a posibles reclutadores.
 </p>
 
-#### Requisitos
+#### Requisitos HTML y CSS
 1. Menú de navegación, una foto de perfil, una sección sobre mí, incluir enlaces a redes sociales.
 2. Debe tener tus datos personales: nombre, edad, nacionalidad, biografía.
-3. Sección de Skills y Hobbies.
-4. Sección de formación y cursos.
-5. Sección de experiencia en la programación, proyectos realizados.
-6. Agregar un formulario de contacto con los siguientes campos: correo electrónico, nombre, asunto, mensaje y un botón para enviar la información.
-7. Colocar un pie de página con la información de la persona que desarrolló este challenge.
+3. Secciones de: Skills, Hobbies, Formación académica, Experiencia en la programación.
+4. Agregar un formulario de contacto con los siguientes campos: nombre, correo electrónico, asunto, mensaje y un botón para enviar la información.
+5. Colocar un pie de página con la información de la persona que desarrolló este challenge.
+
+#### Requisitos JavaScript
+1. Validar el campo nombre: no debe estar vacío y no debe exceder los 50 caracteres.
+2. Validar el e-mail: no debe estar vacío y Deber estar en formato e-mail conteniendo el caracter especial @ seguido de un dominio o proveedor seguido de un punto.
+3. Validar el asunto: no debe estar vacío y no debe exceder los 50 caracteres.
+4. Validar el mensaje: no debe estar vacío y no debe exceder los 300 caracteres.
+5. El botón enviar solo debe ser activado cuando todos los campos del formulario estén llenos.
+6. Todos los campos son obligatorios. Mostrar mensaje de error específico cuando alguna de estas condiciones no sea cumplida
+
 
 ## Tecnologías empleadas
 <div>
@@ -35,6 +42,8 @@
 - Flexbox
 - CSS Grid
 - Responsive Web Design
+- Validaciones de formulario con JavaScript
+- Expresiones Regulares con JavaScript
 
 ## Autor
 - Todos mis enlaces: [SOFMAGON](https://beacons.ai/sofmagon)
